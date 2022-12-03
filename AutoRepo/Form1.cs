@@ -131,8 +131,7 @@ namespace AutoRepo
                         sw.WriteLine(fileInput);
                         fileInput = "\t\t{";
                         sw.WriteLine(fileInput);
-                        sw.WriteLine("");
-                        sw.WriteLine(fileInput);
+                        sw.WriteLine("");                        
                         fileInput = "\t\t}";
                         sw.WriteLine(fileInput);
 
