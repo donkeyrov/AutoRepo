@@ -30,8 +30,8 @@
         {
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtProjectDir = new System.Windows.Forms.TextBox();
-            this.btnProjectDir = new System.Windows.Forms.Button();
+            this.txtDatabaseContext = new System.Windows.Forms.TextBox();
+            this.btnDatabaseContext = new System.Windows.Forms.Button();
             this.btnEntitiesDir = new System.Windows.Forms.Button();
             this.txtEntitiesDir = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -54,29 +54,30 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(25, 31);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(126, 15);
+            this.label1.Size = new System.Drawing.Size(116, 15);
             this.label1.TabIndex = 0;
-            this.label1.Text = "SOLUTION DIRECTORY";
+            this.label1.Text = "DATABASE CONTEXT";
             // 
-            // txtProjectDir
+            // txtDatabaseContext
             // 
-            this.txtProjectDir.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtDatabaseContext.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtProjectDir.Location = new System.Drawing.Point(27, 48);
-            this.txtProjectDir.Name = "txtProjectDir";
-            this.txtProjectDir.Size = new System.Drawing.Size(602, 23);
-            this.txtProjectDir.TabIndex = 1;
+            this.txtDatabaseContext.Location = new System.Drawing.Point(27, 48);
+            this.txtDatabaseContext.Name = "txtDatabaseContext";
+            this.txtDatabaseContext.ReadOnly = true;
+            this.txtDatabaseContext.Size = new System.Drawing.Size(602, 23);
+            this.txtDatabaseContext.TabIndex = 1;
             // 
-            // btnProjectDir
+            // btnDatabaseContext
             // 
-            this.btnProjectDir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnProjectDir.Location = new System.Drawing.Point(635, 48);
-            this.btnProjectDir.Name = "btnProjectDir";
-            this.btnProjectDir.Size = new System.Drawing.Size(75, 23);
-            this.btnProjectDir.TabIndex = 2;
-            this.btnProjectDir.Text = "select";
-            this.btnProjectDir.UseVisualStyleBackColor = true;
-            this.btnProjectDir.Click += new System.EventHandler(this.btnProjectDir_Click);
+            this.btnDatabaseContext.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnDatabaseContext.Location = new System.Drawing.Point(635, 48);
+            this.btnDatabaseContext.Name = "btnDatabaseContext";
+            this.btnDatabaseContext.Size = new System.Drawing.Size(75, 23);
+            this.btnDatabaseContext.TabIndex = 2;
+            this.btnDatabaseContext.Text = "select";
+            this.btnDatabaseContext.UseVisualStyleBackColor = true;
+            this.btnDatabaseContext.Click += new System.EventHandler(this.btnProjectDir_Click);
             // 
             // btnEntitiesDir
             // 
@@ -95,6 +96,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtEntitiesDir.Location = new System.Drawing.Point(27, 107);
             this.txtEntitiesDir.Name = "txtEntitiesDir";
+            this.txtEntitiesDir.ReadOnly = true;
             this.txtEntitiesDir.Size = new System.Drawing.Size(602, 23);
             this.txtEntitiesDir.TabIndex = 4;
             // 
@@ -124,6 +126,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtOutputDir.Location = new System.Drawing.Point(27, 170);
             this.txtOutputDir.Name = "txtOutputDir";
+            this.txtOutputDir.ReadOnly = true;
             this.txtOutputDir.Size = new System.Drawing.Size(602, 23);
             this.txtOutputDir.TabIndex = 7;
             // 
@@ -157,6 +160,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtGenericInterface.Location = new System.Drawing.Point(27, 251);
             this.txtGenericInterface.Name = "txtGenericInterface";
+            this.txtGenericInterface.ReadOnly = true;
             this.txtGenericInterface.Size = new System.Drawing.Size(602, 23);
             this.txtGenericInterface.TabIndex = 10;
             // 
@@ -186,6 +190,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtGenericClass.Location = new System.Drawing.Point(27, 299);
             this.txtGenericClass.Name = "txtGenericClass";
+            this.txtGenericClass.ReadOnly = true;
             this.txtGenericClass.Size = new System.Drawing.Size(602, 23);
             this.txtGenericClass.TabIndex = 13;
             // 
@@ -234,8 +239,8 @@
             this.Controls.Add(this.btnEntitiesDir);
             this.Controls.Add(this.txtEntitiesDir);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.btnProjectDir);
-            this.Controls.Add(this.txtProjectDir);
+            this.Controls.Add(this.btnDatabaseContext);
+            this.Controls.Add(this.txtDatabaseContext);
             this.Controls.Add(this.label1);
             this.MaximumSize = new System.Drawing.Size(751, 489);
             this.MinimumSize = new System.Drawing.Size(751, 489);
@@ -250,8 +255,8 @@
 
         private FolderBrowserDialog folderBrowserDialog1;
         private Label label1;
-        private TextBox txtProjectDir;
-        private Button btnProjectDir;
+        private TextBox txtDatabaseContext;
+        private Button btnDatabaseContext;
         private Button btnEntitiesDir;
         private TextBox txtEntitiesDir;
         private Label label2;
