@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.label1 = new System.Windows.Forms.Label();
             this.txtDatabaseContext = new System.Windows.Forms.TextBox();
@@ -47,12 +48,14 @@
             this.label5 = new System.Windows.Forms.Label();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.btnGenerate = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(25, 31);
+            this.label1.Location = new System.Drawing.Point(25, 101);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(116, 15);
             this.label1.TabIndex = 0;
@@ -62,7 +65,7 @@
             // 
             this.txtDatabaseContext.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtDatabaseContext.Location = new System.Drawing.Point(27, 48);
+            this.txtDatabaseContext.Location = new System.Drawing.Point(27, 118);
             this.txtDatabaseContext.Name = "txtDatabaseContext";
             this.txtDatabaseContext.ReadOnly = true;
             this.txtDatabaseContext.Size = new System.Drawing.Size(602, 23);
@@ -71,7 +74,7 @@
             // btnDatabaseContext
             // 
             this.btnDatabaseContext.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnDatabaseContext.Location = new System.Drawing.Point(635, 48);
+            this.btnDatabaseContext.Location = new System.Drawing.Point(635, 118);
             this.btnDatabaseContext.Name = "btnDatabaseContext";
             this.btnDatabaseContext.Size = new System.Drawing.Size(75, 23);
             this.btnDatabaseContext.TabIndex = 2;
@@ -82,7 +85,7 @@
             // btnEntitiesDir
             // 
             this.btnEntitiesDir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnEntitiesDir.Location = new System.Drawing.Point(635, 107);
+            this.btnEntitiesDir.Location = new System.Drawing.Point(635, 161);
             this.btnEntitiesDir.Name = "btnEntitiesDir";
             this.btnEntitiesDir.Size = new System.Drawing.Size(75, 23);
             this.btnEntitiesDir.TabIndex = 5;
@@ -94,7 +97,7 @@
             // 
             this.txtEntitiesDir.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtEntitiesDir.Location = new System.Drawing.Point(27, 107);
+            this.txtEntitiesDir.Location = new System.Drawing.Point(27, 161);
             this.txtEntitiesDir.Name = "txtEntitiesDir";
             this.txtEntitiesDir.ReadOnly = true;
             this.txtEntitiesDir.Size = new System.Drawing.Size(602, 23);
@@ -103,7 +106,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(25, 90);
+            this.label2.Location = new System.Drawing.Point(25, 144);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(115, 15);
             this.label2.TabIndex = 3;
@@ -112,7 +115,7 @@
             // btnOutputDir
             // 
             this.btnOutputDir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnOutputDir.Location = new System.Drawing.Point(635, 170);
+            this.btnOutputDir.Location = new System.Drawing.Point(635, 204);
             this.btnOutputDir.Name = "btnOutputDir";
             this.btnOutputDir.Size = new System.Drawing.Size(75, 23);
             this.btnOutputDir.TabIndex = 8;
@@ -124,7 +127,7 @@
             // 
             this.txtOutputDir.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtOutputDir.Location = new System.Drawing.Point(27, 170);
+            this.txtOutputDir.Location = new System.Drawing.Point(27, 204);
             this.txtOutputDir.Name = "txtOutputDir";
             this.txtOutputDir.ReadOnly = true;
             this.txtOutputDir.Size = new System.Drawing.Size(602, 23);
@@ -133,7 +136,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(25, 153);
+            this.label3.Location = new System.Drawing.Point(25, 187);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(114, 15);
             this.label3.TabIndex = 6;
@@ -146,7 +149,7 @@
             // btnGenericInterface
             // 
             this.btnGenericInterface.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnGenericInterface.Location = new System.Drawing.Point(635, 251);
+            this.btnGenericInterface.Location = new System.Drawing.Point(635, 273);
             this.btnGenericInterface.Name = "btnGenericInterface";
             this.btnGenericInterface.Size = new System.Drawing.Size(75, 23);
             this.btnGenericInterface.TabIndex = 11;
@@ -158,7 +161,7 @@
             // 
             this.txtGenericInterface.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtGenericInterface.Location = new System.Drawing.Point(27, 251);
+            this.txtGenericInterface.Location = new System.Drawing.Point(27, 273);
             this.txtGenericInterface.Name = "txtGenericInterface";
             this.txtGenericInterface.ReadOnly = true;
             this.txtGenericInterface.Size = new System.Drawing.Size(602, 23);
@@ -167,7 +170,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(25, 234);
+            this.label4.Location = new System.Drawing.Point(25, 256);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(115, 15);
             this.label4.TabIndex = 9;
@@ -176,7 +179,7 @@
             // btnGenericClass
             // 
             this.btnGenericClass.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnGenericClass.Location = new System.Drawing.Point(635, 299);
+            this.btnGenericClass.Location = new System.Drawing.Point(635, 317);
             this.btnGenericClass.Name = "btnGenericClass";
             this.btnGenericClass.Size = new System.Drawing.Size(75, 23);
             this.btnGenericClass.TabIndex = 14;
@@ -188,7 +191,7 @@
             // 
             this.txtGenericClass.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtGenericClass.Location = new System.Drawing.Point(27, 299);
+            this.txtGenericClass.Location = new System.Drawing.Point(27, 317);
             this.txtGenericClass.Name = "txtGenericClass";
             this.txtGenericClass.ReadOnly = true;
             this.txtGenericClass.Size = new System.Drawing.Size(602, 23);
@@ -197,7 +200,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(25, 282);
+            this.label5.Location = new System.Drawing.Point(25, 300);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(91, 15);
             this.label5.TabIndex = 12;
@@ -220,11 +223,32 @@
             this.btnGenerate.UseVisualStyleBackColor = true;
             this.btnGenerate.Click += new System.EventHandler(this.btnGenerate_Click);
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label6.Location = new System.Drawing.Point(271, 7);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(130, 30);
+            this.label6.TabIndex = 17;
+            this.label6.Text = "AUTO REPO";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(25, 43);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(651, 30);
+            this.label7.TabIndex = 18;
+            this.label7.Text = resources.GetString("label7.Text");
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(735, 450);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.btnGenerate);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.btnGenericClass);
@@ -272,5 +296,7 @@
         private Label label5;
         private ProgressBar progressBar1;
         private Button btnGenerate;
+        private Label label6;
+        private Label label7;
     }
 }

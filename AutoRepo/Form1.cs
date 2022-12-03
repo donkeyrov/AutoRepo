@@ -68,7 +68,38 @@ namespace AutoRepo
         private void btnGenerate_Click(object sender, EventArgs e)
         {
             try
-            {                
+            {    
+                if(string.IsNullOrEmpty(txtDatabaseContext.Text))
+                {
+                    MessageBox.Show("Please select the database context","System Information",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                    txtDatabaseContext.Focus();
+                    return;
+                }
+                if (string.IsNullOrEmpty(txtEntitiesDir.Text))
+                {
+                    MessageBox.Show("Please select the database entities directory", "System Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    txtEntitiesDir.Focus();
+                    return;
+                }
+                if (string.IsNullOrEmpty(txtOutputDir.Text))
+                {
+                    MessageBox.Show("Please select the output directory", "System Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    txtOutputDir.Focus();
+                    return;
+                }
+                if (string.IsNullOrEmpty(txtGenericInterface.Text))
+                {
+                    MessageBox.Show("Please select the generic interface", "System Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    txtGenericInterface.Focus();
+                    return;
+                }
+                if (string.IsNullOrEmpty(txtGenericClass.Text))
+                {
+                    MessageBox.Show("Please select the generic class", "System Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    txtGenericClass.Focus();
+                    return;
+                }
+
                 foreach (var file in files)
                 {
                     progressBar1.Value += 1;

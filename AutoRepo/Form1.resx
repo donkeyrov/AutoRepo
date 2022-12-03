@@ -63,4 +63,8 @@
   <metadata name="openFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>186, 17</value>
   </metadata>
+  <data name="label7.Text" xml:space="preserve">
+    <value>Automatically generate interfaces and their implementations based on the database entities created. AutoRepo follows the
+ repository pattern and depends on the presence of a generic interface and class as well as a database context.</value>
+  </data>
 </root>
