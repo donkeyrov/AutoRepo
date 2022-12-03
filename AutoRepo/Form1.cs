@@ -128,9 +128,13 @@ namespace AutoRepo
                         sw.WriteLine(fileInput);
 
                         fileInput = $"\t\tpublic {repoName}({txtDatabaseContext.Text} db):base(db)";
+                        sw.WriteLine(fileInput);
                         fileInput = "\t\t{";
+                        sw.WriteLine(fileInput);
                         sw.WriteLine("");
-                        fileInput = "\t\t}";                       
+                        sw.WriteLine(fileInput);
+                        fileInput = "\t\t}";
+                        sw.WriteLine(fileInput);
 
                         fileInput = "\t}";
                         sw.WriteLine(fileInput);
